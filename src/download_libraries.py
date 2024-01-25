@@ -16,3 +16,7 @@ def download_libraries(urls):
         if response.status_code == 200:
             with open(file_path, 'wb') as f:
                 f.write(response.content)
+
+if __name__ == "__main__":
+    urls = input("Enter the URLs of the libraries you want to download, separated by spaces: ").split()
+    download_libraries(urls)

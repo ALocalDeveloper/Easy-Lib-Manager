@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "What do you want to do? (download/remove/list)"
+echo "What do you want to do? (download/remove/list/search)"
 read action
 
 case $action in
@@ -14,9 +14,11 @@ case $action in
         python3 list_libraries.py
         ;;
     search)
-        python3 search.py
-        ;;    
+        echo "Enter the name or part of the name of the library you want to search for:"
+        read query
+        python3 search.py "$query"
+        ;;
     *)
-        echo "Invalid action."
+        echo "Invalid action. Please enter 'download', 'remove', 'list', or 'search'."
         ;;
 esac

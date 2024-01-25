@@ -19,3 +19,7 @@ def remove_libraries(libs):
         print("Deleted directory:", lib_dir)
     else:
         print("Directory does not exist:", lib_dir)
+
+if __name__ == "__main__":
+    libs = input("Enter the names of the libraries you want to remove, separated by spaces: ").split()
+    remove_libraries(libs)
