@@ -18,5 +18,5 @@ def download_libraries(urls):
                 f.write(response.content)
 
 if __name__ == "__main__":
-    urls = input("Enter the URLs of the libraries you want to download, separated by spaces: ").split()
+    urls = input("Enter the URLs of the libraries you want to download, separated by spaces, make sure its the full url: ").split()
     download_libraries(urls)
