@@ -1,14 +1,17 @@
 #!/bin/bash
 echo "
+            ███████ ██      ███    ███ 
+            ██      ██      ████  ████ 
+            █████   ██      ██ ████ ██ 
+            ██      ██      ██  ██  ██ 
+            ███████ ███████ ██      ██ 
 
-  ███████╗██╗     ███╗   ███╗ 
-  ██╔════╝██║     ████╗ ████║ 
-  █████╗  ██║     ██╔████╔██║ 
-  ██╔══╝  ██║     ██║╚██╔╝██║ 
-  ███████╗███████╗██║ ╚═╝ ██║ 
-  ╚══════╝╚══════╝╚═╝     ╚═╝
 
+                Easy Library Manager
+  https://github.com/ALocalDeveloper/Easy-Lib-Manager
 "
+           
+
 echo "What do you want to do? (download/remove/list/search/exit)"
 read action
 
