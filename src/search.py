@@ -1,6 +1,18 @@
-from bs4 import BeautifulSoup
 import requests
+from html.parser import HTMLParser
 from googlesearch import search
+from urllib.parse import quote
+
+class MyHTMLParser(HTMLParser):
+    def __init__(self, j):
+        super().__init__()
+        self.j = j
+
+    def handle_starttag(self, tag, attrs):
+        if tag == 'a':
+            for name, value in attrs:
+                if name == 'href' and ('download' in value and value.endswith(('tar', 'zip', 'tar.gz'))):
+                    print(self.j.split('&')[0] + value)
 
 def search_libraries(query):
     # Perform the search
@@ -10,13 +22,8 @@ def search_libraries(query):
             response = requests.get(j)
 
             # Parse the HTML content of the page with Beautiful Soup
-            soup = BeautifulSoup(response.content, 'html.parser')
-
-            # Find all <a> tags (which define hyperlinks)
-            for a in soup.find_all('a'):
-                # Check if the href attribute contains 'download' and ends with '.tar', '.zip', or '.tar.gz'
-                if 'download' in a.get('href', '') and a['href'].endswith(ext):
-                    print(a['href'])
+            parser = MyHTMLParser(j)
+            parser.feed(str(response.content))
 
 # Ask the user for the library they want to search for
 query = input("Enter the name of the library you want to search for: ")
