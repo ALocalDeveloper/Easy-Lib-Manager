@@ -1,5 +1,13 @@
 #!/bin/bash
-
+echo " 
+         ______   _        __  __ 
+        |  ____| | |      |  \/  |
+        | |__    | |      | \  / |
+        |  __|   | |      | |\/| |
+        | |____  | |____  | |  | |
+        |______| |______| |_|  |_|
+                           
+"
 echo "What do you want to do? (download/remove/list/search/exit)"
 read action
 
