@@ -8,3 +8,5 @@ fi
 
 export LDFLAGS="-L$LIBS_DIR $LDFLAGS"
 export CXXFLAGS="-I$LIBS_DIR $CXXFLAGS"
+
+echo "If this echoes then the config worked"
