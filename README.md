@@ -4,7 +4,7 @@ config.sh will export the libs folder to the compiler so that it's automatically
 the library folder is located in ~/libs you will have to source config.sh every terminal session
 if you want it to persist over terminal sessions you need to add source ./config.sh to your .bashrc or .bash_profile files
 ### WORKS ONLY WITH GCC/Linux FOR NOW
-### To use this you need:
+## To use this you need:
 googlesearch python package
 
 beautifulsoup python package
