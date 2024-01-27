@@ -6,7 +6,9 @@ if you want it to persist over terminal sessions you need to add source ./config
 echo 'source /full/path/to/your/config.sh' >> ~/.bashrc
 ### WORKS ONLY WITH GCC/Linux FOR NOW
 ## To use this you need:
-Use linux
+Bash
+
+GCC
 
 python3
 
@@ -17,4 +19,5 @@ beautifulsoup python package
 tqdm python package 
 ##
 
-![Screenshot from 2024-01-26 13-35-09](https://github.com/ALocalDeveloper/Easy-Lib-Manager/assets/98947261/4489af2e-38b6-4208-bb66-23835a0df5ec)
+
+![Screenshot from 2024-01-26 21-15-56](https://github.com/ALocalDeveloper/Easy-Lib-Manager/assets/98947261/830e8a98-aa18-4f30-8e05-bda94b8af6a3)
