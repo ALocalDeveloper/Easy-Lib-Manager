@@ -6,7 +6,9 @@ if you want it to persist over terminal sessions you need to add source ./config
 echo 'source /full/path/to/your/config.sh' >> ~/.bashrc
 ### WORKS ONLY WITH GCC/Linux FOR NOW
 ## To use this you need:
-Use linux
+Bash
+
+GCC
 
 python3
 
