@@ -9,3 +9,4 @@ fi
 export LDFLAGS=${LDFLAGS#-L~/libs }
 export CXXFLAGS=${CXXFLAGS#-I~/libs }
 
+echo "If this echoes the unconfig worked"
