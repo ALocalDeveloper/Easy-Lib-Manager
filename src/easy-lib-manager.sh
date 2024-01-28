@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
-echo "
-            ███████ ██      ███    ███ 
-            ██      ██      ████  ████ 
-            █████   ██      ██ ████ ██ 
-            ██      ██      ██  ██  ██ 
-            ███████ ███████ ██      ██ 
 
-            Easy Library Manager
+if [ $# -eq 0 ]; then
+    echo "
+             ███████ ██      ███    ███ 
+             ██      ██      ████  ████ 
+             █████   ██      ██ ████ ██ 
+             ██      ██      ██  ██  ██ 
+             ███████ ███████ ██      ██ 
+
+                 Easy Library Manager
      https://github.com/ALocalDeveloper/Easy-Lib-Manager
-"
+    "
+fi
 
 if [ $# -eq 0 ]; then
     echo "Usage: easy-lib-manager [command]"
