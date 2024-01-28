@@ -7,7 +7,7 @@ echo "
             ███████ ███████ ██      ██ 
 
             Easy Library Manager
- https://github.com/ALocalDeveloper/Easy-Lib-Manager
+     https://github.com/ALocalDeveloper/Easy-Lib-Manager
 "
 
 if [ $# -eq 0 ]; then
@@ -18,7 +18,6 @@ if [ $# -eq 0 ]; then
     echo " remove     Remove libraries"
     echo " list       List available libraries"
     echo " search     Search for a library"
-    echo " exit       Exit the program"
     exit 0
 fi
 
@@ -42,9 +41,6 @@ case $action in
             query=$2
         fi
         python3 "$(dirname "$0")/search.py" "$query"
-        ;;
-    exit)
-        exit 0
         ;;
     *)
         echo "Invalid action. Please enter 'download', 'remove', 'list', or 'search'."
