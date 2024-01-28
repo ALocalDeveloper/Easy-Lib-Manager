@@ -26,5 +26,8 @@ tqdm python package
 you can get this by running install.sh (for apt/debian based distros) or install-fedora.sh (for dnf/fedora)
 ##
 
-
+### version 1.0.0
 ![Screenshot from 2024-01-26 21-15-56](https://github.com/ALocalDeveloper/Easy-Lib-Manager/assets/98947261/830e8a98-aa18-4f30-8e05-bda94b8af6a3)
+
+### version 1.0.1
+![Screenshot from 2024-01-28 17-32-51](https://github.com/ALocalDeveloper/Easy-Lib-Manager/assets/98947261/67b088c5-363a-41c8-8b6c-e1b5791bf23e)
