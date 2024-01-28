@@ -26,13 +26,13 @@ action=$1
 
 case $action in
     download)
-        python3 download_libraries.py
+        python3 "$(dirname "$0")/download_libraries.py"
         ;;
     remove)
-        python3 remove_libraries.py
+        python3 "$(dirname "$0")/remove_libraries.py"
         ;;
     list)
-        python3 list_libraries.py
+        python3 "$(dirname "$0")/list_libraries.py"
         ;;
     search)
         if [ $# -lt 2 ]; then
@@ -41,7 +41,7 @@ case $action in
         else
             query=$2
         fi
-        python3 search.py "$query"
+        python3 "$(dirname "$0")/search.py" "$query"
         ;;
     exit)
         exit 0

@@ -1,10 +1,11 @@
 import sys
 import json
+import os
 
 def search_libraries(query):
     print(f"Query: {query}") # Debugging line
 
-    with open('libraries.json', 'r') as f:
+    with open(os.path.join(os.path.dirname(__file__), 'libraries.json'), 'r') as f:
         libraries = json.load(f)
 
     query = query.lower()
