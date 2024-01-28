@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "
             ███████ ██      ███    ███ 
             ██      ██      ████  ████ 
@@ -6,14 +6,23 @@ echo "
             ██      ██      ██  ██  ██ 
             ███████ ███████ ██      ██ 
 
-
-                Easy Library Manager
-  https://github.com/ALocalDeveloper/Easy-Lib-Manager
+            Easy Library Manager
+ https://github.com/ALocalDeveloper/Easy-Lib-Manager
 "
-           
 
-echo "What do you want to do? (download/remove/list/search/exit)"
-read action
+if [ $# -eq 0 ]; then
+    echo "Usage: easy-lib-manager [command]"
+    echo ""
+    echo "Commands:"
+    echo " download   Download libraries"
+    echo " remove     Remove libraries"
+    echo " list       List available libraries"
+    echo " search     Search for a library"
+    echo " exit       Exit the program"
+    exit 0
+fi
+
+action=$1
 
 case $action in
     download)
@@ -26,8 +35,12 @@ case $action in
         python3 list_libraries.py
         ;;
     search)
-        echo "Enter the name or part of the name of the library you want to search for:"
-        read query
+        if [ $# -lt 2 ]; then
+            echo "Enter the name or part of the name of the library you want to search for:"
+            read query
+        else
+            query=$2
+        fi
         python3 search.py "$query"
         ;;
     exit)
