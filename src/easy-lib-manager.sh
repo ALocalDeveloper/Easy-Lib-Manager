@@ -21,6 +21,7 @@ if [ $# -eq 0 ]; then
     echo " remove     Remove libraries"
     echo " list       List available libraries"
     echo " search     Search for a library"
+    echo " version    Display the version"
     exit 0
 fi
 
