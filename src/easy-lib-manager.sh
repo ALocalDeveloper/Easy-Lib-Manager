@@ -45,6 +45,17 @@ case $action in
         fi
         python3 "$(dirname "$0")/search.py" "$query"
         ;;
+    version)
+        echo "
+
+             ███████ ██      ███    ███ 
+             ██      ██      ████  ████ 
+             █████   ██      ██ ████ ██ 
+             ██      ██      ██  ██  ██ 
+             ███████ ███████ ██      ██ 
+        
+               version v1.0.1-bugfix"
+        ;;
     *)
         echo "Invalid action. Please enter 'download', 'remove', 'list', or 'search'."
         ;;
