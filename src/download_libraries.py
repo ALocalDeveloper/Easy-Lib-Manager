@@ -33,6 +33,9 @@ def download_libraries(urls):
             with zipfile.ZipFile(file_path, 'r') as zip_ref:
                 zip_ref.extractall(path=libs_dir)
 
+        # Remove the downloaded file
+        os.remove(file_path)
+
 if __name__ == "__main__":
     urls = input("Enter the URLs of the libraries you want to download, separated by spaces, make sure its the full url: ").split()
     download_libraries(urls)
