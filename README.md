@@ -5,6 +5,8 @@ the library folder is located in ~/libs you will have to source config.sh every 
 if you want it to persist over terminal sessions you need to add source ./config.sh to your .bashrc or .bash_profile files
 echo 'source /full/path/to/your/config.sh' >> ~/.bashrc
 
+The search function only finds 64 bit .tar.gz or zip files for now
+
 ### THIS TOOL ONLY ADDS THE LIBS FOLDER TO THE COMPILER ARGS
 
 ### WORKS ONLY WITH GCC/Linux FOR NOW

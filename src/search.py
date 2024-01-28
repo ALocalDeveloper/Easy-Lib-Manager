@@ -2,7 +2,6 @@ import sys
 import json
 
 def search_libraries(query):
-    print("Running search_libraries function") # Debugging line
     print(f"Query: {query}") # Debugging line
 
     with open('libraries.json', 'r') as f:
