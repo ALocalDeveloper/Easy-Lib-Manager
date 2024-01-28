@@ -20,6 +20,8 @@ googlesearch python package
 beautifulsoup python package
 
 tqdm python package 
+
+you can get this by running install.sh (for apt/debian based distros) or install-fedora.sh (for dnf/fedora)
 ##
 
 
