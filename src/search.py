@@ -11,9 +11,7 @@ def search_libraries(query):
     query = query.lower()
     for key in libraries:
         if query in key.lower():
-            print(libraries[key]['name'])
-            print(libraries[key]['version'])
-            print(libraries[key]['link'])
+            print(f"{libraries[key]['name']} ({libraries[key]['version']}): {libraries[key]['link']}")
             return
     print("Library not found.")
 
