@@ -58,6 +58,6 @@ case $action in
                version v1.0.1-bugfix"
         ;;
     *)
-        echo "Invalid action. Please enter 'download', 'remove', 'list', or 'search'."
+        echo "Invalid action. Please enter 'download', 'remove', 'list', 'version' or 'search'."
         ;;
 esac
