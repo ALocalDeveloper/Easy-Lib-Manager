@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
-echo "
-            ███████ ██      ███    ███ 
-            ██      ██      ████  ████ 
-            █████   ██      ██ ████ ██ 
-            ██      ██      ██  ██  ██ 
-            ███████ ███████ ██      ██ 
 
-            Easy Library Manager
- https://github.com/ALocalDeveloper/Easy-Lib-Manager
-"
+if [ $# -eq 0 ]; then
+    echo "
+             ███████ ██      ███    ███ 
+             ██      ██      ████  ████ 
+             █████   ██      ██ ████ ██ 
+             ██      ██      ██  ██  ██ 
+             ███████ ███████ ██      ██ 
+
+                 Easy Library Manager
+     https://github.com/ALocalDeveloper/Easy-Lib-Manager
+    "
+fi
 
 if [ $# -eq 0 ]; then
     echo "Usage: easy-lib-manager [command]"
@@ -18,7 +21,7 @@ if [ $# -eq 0 ]; then
     echo " remove     Remove libraries"
     echo " list       List available libraries"
     echo " search     Search for a library"
-    echo " exit       Exit the program"
+    echo " version    Display the version"
     exit 0
 fi
 
@@ -43,10 +46,18 @@ case $action in
         fi
         python3 "$(dirname "$0")/search.py" "$query"
         ;;
-    exit)
-        exit 0
+    version)
+        echo "
+
+             ███████ ██      ███    ███ 
+             ██      ██      ████  ████ 
+             █████   ██      ██ ████ ██ 
+             ██      ██      ██  ██  ██ 
+             ███████ ███████ ██      ██ 
+        
+               version v1.0.1-bugfix"
         ;;
     *)
-        echo "Invalid action. Please enter 'download', 'remove', 'list', or 'search'."
+        echo "Invalid action. Please enter 'download', 'remove', 'list', 'version' or 'search'."
         ;;
 esac
