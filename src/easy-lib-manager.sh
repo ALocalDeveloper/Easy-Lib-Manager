@@ -2,13 +2,8 @@
 
 if [ $# -eq 0 ]; then
     echo "
-             ███████ ██      ███    ███ 
-             ██      ██      ████  ████ 
-             █████   ██      ██ ████ ██ 
-             ██      ██      ██  ██  ██ 
-             ███████ ███████ ██      ██ 
 
-                 Easy Library Manager
+                   Easy Library Manager
      https://github.com/ALocalDeveloper/Easy-Lib-Manager
     "
 fi
