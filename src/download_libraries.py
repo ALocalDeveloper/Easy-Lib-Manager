@@ -33,7 +33,7 @@ def download_libraries(urls):
             with zipfile.ZipFile(file_path, 'r') as zip_ref:
                 zip_ref.extractall(path=libs_dir)
 
-        # Remove the downloaded file
+        # Remove the downloaded file from dir
         os.remove(file_path)
 
 if __name__ == "__main__":
